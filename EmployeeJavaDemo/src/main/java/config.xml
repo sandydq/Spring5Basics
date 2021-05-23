@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+    http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+	<bean id="employeeServiceImpl" class="com.infosys.service.EmployeeServiceImpl"  scope="singleton">
+	<!-- Using Constructor Injection
+		<constructor-arg name="empRepo" ref="employeeRepositoryImpl"/>
+		<constructor-arg name="loanService" ref="loanServiceImpl"/> -->
+		<!-- Using Setter Injection 
+		<property name="empRepoImpl" ref="employeeRepositoryImpl"/>
+		<property name="loanServiceImpl" ref="loanServiceImpl"/> -->
+	</bean>
+	<bean id="loanServiceImpl" class="com.infosys.service.LoanServiceImpl" >
+		<!-- Using Constructor Injection 
+		<constructor-arg name="loanRepository" ref="loanRepositoryImpl"/> -->
+		<!-- Using Setter Injection 
+	  	<property name="empRepo" ref="employeeRepositoryImpl"/> -->
+	</bean>
+	
+	<bean id="employeeRepositoryImpl" class="com.infosys.repository.EmployeeRepositoryImpl" scope="prototype"/>
+	<bean id="loanRepositoryImpl" class="com.infosys.repository.LoanRepositoryImpl" />
+</beans>

@@ -1,0 +1,5 @@
+[main] ERROR com.infosys.demo.LoggingAspect  - java.lang.ArithmeticException: No records to update
+[main] ERROR com.infosys.demo.LoggingAspect  - java.lang.ArithmeticException: No records to update
+[main] ERROR com.infosys.demo.LoggingAspect  - java.lang.ArithmeticException: No records to update
+[main] ERROR com.infosys.demo.LoggingAspect  - java.lang.NullPointerException
+[main] ERROR com.infosys.demo.LoggingAspect  - java.lang.ArithmeticException: No records to update
